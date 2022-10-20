@@ -1,0 +1,81 @@
+@import "preferences.scss";
+
+@mixin menu() {
+  @if ($burgerIsThereMenu == true) {
+    .menu__icon {
+      position: relative;
+      display: none;
+      div {
+        background-color: $burgerColor;
+        width: $burgerWidth;
+        height: $burgerHeight;
+        position: absolute;
+        &:first-child {
+          left: 0;
+          top: $burgerInterval;
+        }
+        &:last-child {
+          left: 0;
+          top: -$burgerInterval;
+        }
+      }
+    }
+
+    .menu__body {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #5e534e;
+    }
+
+    .menu__link {
+      margin-left: $linkInterval * 0.5;
+      margin-right: $linkInterval * 0.5;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $headerMinWidth) {
+      .menu__icon {
+        display: block;
+      }
+
+      .menu__body {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin btn() {
+  @if ($anyBtns == true) {
+    .link-btn a {
+      display: inline-block;
+      padding: $btnPadding;
+      text-decoration: none;
+      color: $btnColor;
+      background-color: $btnBg;
+      border-radius: $btnRadius;
+      font-size: $fontSize;
+      white-space: nowrap;
+    }
+  }
+}
+
+@mixin headerAbove() {
+  @if ($isHeaderAbove == true) {
+    .header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .intro__content {
+      padding-top: $headerHeight;
+    }
+  }
+}

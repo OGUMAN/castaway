@@ -1,0 +1,145 @@
+@import "mixins.scss";
+@import "preferences.scss";
+@include btn();
+
+/* latin-ext */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHSeH.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBamC2QX.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBimCw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body,
+html {
+  font-size: $fontSize;
+  color: $fontColor;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  background: #191919;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+._container {
+  max-width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding 0;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro {
+    padding-top: 20px !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.section__title {
+  letter-spacing: 2.88px;
+}
+
+.btn {
+  border: 0;
+  display: inline-block;
+  padding: 15px 17.5px;
+  text-decoration: none;
+  background-color: #118da8;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: #196d80;
+  }
+}
+
+.text {
+  color: $gray;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.subtitle {
+  color: $turquoise;
+  margin-bottom: 19px;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 880px) {
+  .section__title {
+    font-size: 50px !important;
+  }
+
+  ._container {
+    padding: 32px;
+  }
+
+  .episodes__header {
+    padding-bottom: 37px !important;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  ._container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

@@ -1,0 +1,143 @@
+.subscribe__flex {
+  min-height: 387px;
+  background-color: #000000;
+  border-radius: 32px;
+  margin-top: 14px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 200px;
+    height: 100px;
+    background-image: url("img/lines-02.svg");
+    background-repeat: no-repeat;
+    bottom: -35px;
+    left: -38px;
+  }
+}
+
+.subscribe__subtitle {
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.subscribe__title {
+  font-size: 72px;
+}
+
+.subscribe__info {
+  max-width: 431px;
+  width: 100%;
+}
+
+.subscribe__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 68px;
+}
+
+.subscribe__input {
+  padding: 27.5px 18.5px;
+  width: 100%;
+  display: block;
+  max-width: 522px;
+  border: 0;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background: #191919;
+  font-size: 24px;
+  color: $gray;
+}
+
+.subscribe__input::placeholder {
+  font-size: 24px;
+  color: $gray;
+}
+
+.subscribe__item {
+  width: 50%;
+}
+
+.subscribe__btn {
+  background: $turquoise;
+  border-radius: 6px;
+  padding: 15px 17.5px;
+  border: 0;
+  color: $gray;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: #196d80;
+  }
+}
+
+@media only screen and (max-width: 1202px) {
+  .subscribe__inputs {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .subscribe__info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__flex {
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .subscribe__item {
+    width: 100%;
+  }
+
+  .subscribe__inputs {
+    display: flex;
+    align-items: center;
+  }
+
+  .subscribe__btn {
+    padding: 15px 50px;
+    font-size: 20px;
+  }
+
+  .subscribe__input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .subscribe__flex {
+    padding: 25px 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .subscribe__flex {
+    border-radius: 15px;
+  }
+
+  .subscribe__input,
+  .subscribe__input::placeholder {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 848px) {
+  .subscribe__flex:after {
+    display: none;
+  }
+}

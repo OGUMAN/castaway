@@ -1,0 +1,43 @@
+// header
+$headerMaxWidth: 1339px + 40px;
+$headerMinWidth: 300px;
+$headerHeight: 122px;
+$isHeaderAbove: false;
+
+// меню
+$burgerIsThereMenu: true;
+$burgerColor: #5e534e;
+$burgerInterval: 7px;
+$burgerWidth: 22.5px;
+$burgerHeight: 2.5px;
+$linkInterval: 40px;
+
+// контейнеры
+$minWidth: 320px;
+$maxWidth: 1300px + 40px;
+$maxWidthContainer: 1170;
+$md1: $maxWidth + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+$padding: 91px;
+
+//btn
+$anyBtns: true;
+$btnBg: #ee5514;
+$btnPadding: 15px 30px;
+$btnColor: #fff;
+$btnRadius: 5px;
+$fontSize: 18px;
+
+//font
+$fontSize: 18px;
+$fontFamily: "DM Sans", sans-serif;
+$SourceSerifPro: "Source Serif Pro", serif;
+$fontWeight: 400;
+$black: #1a0a03;
+$orange: #ee5514;
+$white: #ffffff;
+$gray: rgba(255, 255, 255, 0.7);
+$turquoise: #118da8;
+$fontColor: $white;
