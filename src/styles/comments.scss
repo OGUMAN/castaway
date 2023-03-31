@@ -1,78 +1,80 @@
-.comment {
-  background: #000000;
-  border-radius: 32px;
-  max-width: 423px;
-  width: 100%;
-  margin-bottom: 16px;
-  padding: 50px;
-  padding-top: 54px;
-}
-
-.comments__flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 18px;
-}
-
-.comment__stars {
-  display: flex;
-  align-items: center;
-  margin-bottom: 19px;
-}
-
-.comment__text {
-  font-size: 36px;
-  margin-bottom: 24px;
-  letter-spacing: 0.001px;
-  line-height: 42px;
-}
-
-.comment__autor {
-  color: $gray;
-  font-size: 24px;
-}
-
-.comment__star {
-  margin-right: 5px;
-}
-
-@media only screen and (max-width: 1329px) {
-  .comments__flex {
-    justify-content: center;
+.comments {
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 18px;
   }
 
-  .comment {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .comment {
-    padding: 40px;
-    margin-right: 0;
-    margin-left: 0;
+  &__item {
+    background: #000000;
+    border-radius: 32px;
+    max-width: 423px;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 50px;
+    padding-top: 54px;
   }
 
-  .comment__text {
-    font-size: 29px;
-    margin-bottom: 15px;
+  &__stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
   }
 
-  .comment__autor {
-    font-size: 17.5px;
+  &__text {
+    font-size: 36px;
+    margin-bottom: 24px;
+    letter-spacing: 0.001px;
+    line-height: 42px;
   }
-}
 
-@media only screen and (max-width: 427px) {
-  .comment {
-    padding: 30px;
+  &__autor {
+    color: $gray;
+    font-size: 24px;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .comment {
-    border-radius: 15px;
+  &__star {
+    margin-right: 5px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    &__item {
+      padding: 40px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &__text {
+      font-size: 29px;
+      margin-bottom: 15px;
+    }
+
+    &__author {
+      font-size: 17.5px;
+    }
+  }
+
+  @media only screen and (max-width: 427px) {
+    &__item {
+      padding: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__item {
+      border-radius: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 1329px) {
+    &__flex {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 }

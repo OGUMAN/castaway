@@ -56,12 +56,11 @@ html {
   font-family: $fontFamily;
   font-weight: $fontWeight;
   background: #191919;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   position: relative;
 }
 
-._container {
+.container {
   max-width: $maxWidth;
   width: 100%;
   margin: 0 auto;
@@ -123,6 +122,35 @@ h6 {
   font-size: 17px;
 }
 
+.listen {
+  padding-left: 24px;
+
+  &__title {
+    margin-bottom: 23px;
+    font-size: 15px;
+    letter-spacing: 0.05px;
+  }
+
+  &__links {
+    align-items: center;
+  }
+
+  &__link {
+    margin-right: 8px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 880px) {
   .section__title {
     font-size: 50px !important;
@@ -137,9 +165,19 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .section__title {
+    font-size: 40px !important;
+  }
+}
+
 @media only screen and (max-width: 470px) {
   ._container {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
